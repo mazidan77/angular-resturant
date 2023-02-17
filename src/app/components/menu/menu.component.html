@@ -1,0 +1,54 @@
+
+
+<section class=" cvv">
+  <div class="container ">
+      <!-- <h1 class="text-center text-uppercase title">Food Order </h1> -->
+
+      <br>
+      <br>
+      <div class="row"  >
+          <div class="col-sm-6 col-md-6 col-lg-4" *ngFor="let s of Meals">
+              <div class="food-card">
+                  <div class="food-card_img">
+                      <img src="{{s.Image}}" alt="">
+
+                  </div>
+                  <div class="food-card_content">
+                      <div class="food-card_title-section">
+                          <a href="#!" class="food-card_title">{{s.Name}}</a>
+                          <a href="#!" class="food-card_author">{{s.cat}}</a>
+                      </div>
+                      <div class="food-card_bottom-section">
+
+                          <hr>
+                          <div class="space-between">
+                              <div class="food-card_price">
+                                  <span>{{s.Price}} EGP</span>
+                              </div>
+
+                              <div class="food-card_order-count">
+                                  <div class="input-group mb-3">
+
+                                      <div class="input-group-append">
+                                          <button class="btn btn-outline-secondary add-btn" type="button" id="button-addon1" (click)="show(s)">Add to cart</button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<style>
+  .cvv{
+background-color: #161616;
+  }
+  .title{
+    color: white;
+  }
+</style>

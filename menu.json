@@ -1,0 +1,84 @@
+{
+  "menu": [
+    {
+      "Name": "Quinoa Salad with Mushroom",
+      "cat": "salad",
+      "Price": 200,
+      "Image": "assets/imgs/salad/1.jpg",
+      "Counter": 1,
+      "id": 1
+    },
+    {
+      "Name": "Grilled Chicken Peach Salad",
+      "cat": "salad",
+      "Price": 200,
+      "Image": "assets/imgs/salad/2.jpg",
+      "Counter": 1,
+      "id": 2
+    },
+    {
+      "Name": "Mango Salad",
+      "Image": "assets/imgs/salad/3.jpg",
+      "Price": 120,
+      "cat": "salad",
+      "Counter": 1,
+      "id": 3
+    },
+    {
+      "Name": "Napoletana",
+      "Image": "assets/imgs/pizaa/1.jpg",
+      "Price": 135,
+      "cat": "pizza",
+      "Counter": 1,
+      "id": 4
+    },
+    {
+      "Name": "Italian Bresaola",
+      "Image": "assets/imgs/pizaa/8c198874-91d6-47b5-b005-d7ffe3b46452.jpg",
+      "Price": 205,
+      "cat": "pizza",
+      "Counter": 1,
+      "id": 5
+    },
+    {
+      "Name": "Homemade Lasagna",
+      "Image": "assets/imgs/pasta/1.jpg",
+      "Price": 160,
+      "cat": "pasta",
+      "Counter": 1,
+      "id": 6
+    },
+    {
+      "Name": "Risotto Porcini",
+      "Image": "assets/imgs/pasta/2.jpg",
+      "Price": 270,
+      "cat": "pasta",
+      "Counter": 1,
+      "id": 7
+    },
+    {
+      "Name": "Shrimp Thai Red Curry",
+      "Image": "assets/imgs/tawagan/1.jpg",
+      "Price": 290,
+      "cat": "tawagen",
+      "Counter": 1,
+      "id": 8
+    },
+    {
+      "Name": "Molokhia",
+      "Image": "assets/imgs/tawagan/2.jpg",
+      "Price": 175,
+      "cat": "tawagen",
+      "Counter": 1,
+      "id": 9
+    },
+    {
+      "Name": "Vegetable Thai Red Curry",
+      "Image": "assets/imgs/tawagan/3.jpg",
+      "Price": 200,
+      "cat": "tawagen",
+      "Counter": 1,
+      "id": 10
+    }
+  ]
+}

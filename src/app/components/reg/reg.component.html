@@ -1,0 +1,67 @@
+<form [formGroup]="addform" action="" class="m-3">
+  <div class="mb-3">
+    <label class="form-label"  for="">name</label>
+<input class="form-control" formControlName="name" type="text" [class.is-invalid]="name?.invalid && name?.touched"  [class.is-valid]="name?.valid ">
+<div class="alert alert-warning" [hidden]="name?.valid || name?.untouched">
+<small *ngIf="name?.errors?.['required']">
+name must be required
+</small>
+<small *ngIf="name?.errors?.['minlength']">
+at least 3 charachters you enter only {{name?.errors?.['minlength'].actualLength}} character
+</small>
+</div>
+  </div>
+
+<!-- <div class="mb-3">
+  <label class="form-label"  for="">age</label>
+  <input class="form-control" formControlName="age" type="text" [class.is-invalid]="age?.invalid && age?.touched"  [class.is-valid]="age?.valid">
+  <div class="alert alert-warning" [hidden]="age?.valid || age?.untouched">
+<small *ngIf="age?.errors?.['required']">
+  age is required
+</small>
+<small *ngIf="age?.errors?.['max']">
+ max is 40
+</small>
+<small *ngIf="age?.errors?.['min']">
+min is 15
+</small>
+  </div>
+</div> -->
+
+<div class="mb-3">
+  <label class="form-label" for="">address</label>
+  <input class="form-control" formControlName="address" type="text" [class.is-invalid]="address?.invalid && address?.touched"  [class.is-valid]="address?.valid">
+  <div class="alert alert-warning "  [hidden]="address?.valid || address?.untouched">
+address is required
+  </div>
+</div>
+
+
+<div class="mb-3">
+  <label class="form-label"  for="">email</label>
+  <input class="form-control" formControlName="email" type="text" [class.is-invalid]="email?.invalid && email?.touched"  [class.is-valid]="email?.valid">
+  <div class="alert alert-warning" [hidden]="email?.valid || email?.untouched">
+mail is required
+  </div>
+</div>
+<div class="mb-3">
+  <label class="form-label" for="">phone</label>
+  <input class="form-control" formControlName="phone" type="text" [class.is-invalid]="phone?.invalid && phone?.touched" [class.is-valid]="phone?.valid">
+  <div class="alert alert-warning" [hidden]="phone?.valid || phone?.untouched">
+  phone is required
+      </div>
+</div>
+
+
+
+</form >
+
+<style>
+  .val{
+    background-color: green;
+  }
+  .inval{
+    cursor: no-drop;
+    background-color: red ;
+  }
+</style>

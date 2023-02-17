@@ -1,0 +1,63 @@
+
+
+
+    <form [formGroup]="addform" class="container ff">
+      <div class="mb-3 file">
+        <div>
+          <label for="exampleInputEmail1" class="form-label">Image</label>
+
+        </div>
+<div  class="mx-3">
+  <input    type="file" formControlName="Image"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+</div>
+
+
+      </div>
+      <div class="mb-3 ">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input  type="text"  formControlName="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Category</label>
+        <input   type="text" formControlName="cat"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Price</label>
+        <input   type="text" formControlName="Price"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+      </div>
+      <div class="mb-3">
+
+        <input   type="text" formControlName="Counter" hidden  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+      </div>
+
+
+      <button type="submit" class="btn btn-primary"  (click)="newitem1()">Submit</button>
+    </form>
+<!--
+        <input
+
+        (click)="ubdate1(name.value , age.value ,address.value )"
+
+
+        type="submit" value="add"> -->
+  <!-- </form> -->
+<style>
+  .ff{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .img{
+    width: 120px;
+  }
+  .file{
+justify-content: start;
+align-items: center;
+display: flex;
+
+  }
+</style>
+

@@ -1,0 +1,73 @@
+<!--
+<form class="form">
+
+  <div class="formGroup mb-2 d-flex">
+  <label class="form-label" for="">name</label>
+  <input #name value="{{meal.Name}}"  class="form-control" formControlName="name" type="text" >
+  </div>
+
+  <div class="formGroup mb-2">
+  <label for="">age</label>
+  <input #age value="{{meal.Price}}" formControlName="age" type="number" >
+  </div>
+
+  <div class="formGroup mb-2">
+    <label for="">address</label>
+    <input #address value="{{meal.cat}}" formControlName="address" type="text" >
+    </div> -->
+
+
+    <form class="container ff">
+      <div class="mb-3 file">
+        <div>
+          <label for="exampleInputEmail1" class="form-label">Image</label>
+          <img  class="form-control img" src="{{meal.Image}}" alt="">
+        </div>
+<div  class="mx-3">
+  <input    type="file" value="{{meal.Image}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+</div>
+
+
+      </div>
+      <div class="mb-3 ">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input  #Name type="email" value="{{meal.Name}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Category</label>
+        <input  #cat type="email" value="{{meal.cat}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Price</label>
+        <input  #Price type="email" value="{{meal.Price}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+      </div>
+
+
+      <button type="submit" class="btn btn-primary"  (click)="ubdate1(Name.value , cat.value ,+Price.value ,meal.Image ,meal.Counter)">Submit</button>
+    </form>
+<!--
+        <input
+
+        (click)="ubdate1(name.value , age.value ,address.value )"
+
+
+        type="submit" value="add"> -->
+  <!-- </form> -->
+<style>
+  .ff{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .img{
+    width: 120px;
+  }
+  .file{
+justify-content: start;
+align-items: center;
+display: flex;
+
+  }
+</style>

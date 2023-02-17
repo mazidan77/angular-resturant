@@ -1,0 +1,50 @@
+<div class="full">
+  <app-header></app-header>
+
+
+  <div  >
+    <div class="search">
+      <div class="d-flex justify-content-center h-100 ">
+        <div class="searchbar">
+          <input class="search_input " type="text" name="" placeholder="Search..."  (keyup)="applyfilter($event)">
+          <a href="#" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div  class="rr">
+    <mat-chip-listbox  aria-label="Fish selection">
+      <div *ngFor="let s of cats "  >
+      <mat-chip-option   (click)="show(s)">{{s}}</mat-chip-option>
+    </div>
+    </mat-chip-listbox>
+  </div>
+
+  <app-menu  [Meals]="filttermeals||meals"></app-menu>
+</div>
+
+
+
+<style>
+  .rr{
+margin-top: 10px;
+
+display: flex;
+justify-content: center;
+  }
+  .full{
+    background-color: #161616;
+  }
+
+  .search{
+    margin-top:30px;
+  }
+  .chips{
+
+text-align: center;
+margin: auto;
+
+  }
+</style>
